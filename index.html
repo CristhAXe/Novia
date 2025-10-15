@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-blur"></div>
+  <div class="container">
+    <div class="question-box">
+        <h2>¿Quieres ser mi novia Vanesa?</h2>
+        <p id="customText"> Hola Vanesa quiero que sepas  que eres una chica maravillosa  <br>  se que la forma de pedirte que seas mi novia no fue la mejor  <br>  quiero que sepas que te amo
+        mucho y que quiero estar contigo </p>
+    </div>
+    <div class="options-box">
+        <button class="option-btn" id="yesBtn">Sí</button>
+        <button class="option-btn" id="noBtn">No</button>
+    </div>
+    <div id="gifBox"></div>
+</div>
+    <script>
+        const yesBtn = document.getElementById('yesBtn');
+        const noBtn = document.getElementById('noBtn');
+        const gifBox = document.getElementById('gifBox');
+
+        yesBtn.addEventListener('click', () => {
+            gifBox.innerHTML = `<img src="https://llevatilde.es/imagetexts/9/91/volt%C3%A9ate.png" alt="Sí" style="width:200px;">`;
+        });
+
+        noBtn.addEventListener('click', () => {
+            gifBox.innerHTML = `<img src="https://media.tenor.com/pqK9srSrndYAAAAM/bunnies-what.gif" alt="No" style="width:200px;">`;
+        });
+    </script>
+</body>
+</html>
